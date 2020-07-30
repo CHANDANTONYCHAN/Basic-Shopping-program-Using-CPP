@@ -1,0 +1,609 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<graphics.h>
+#include<dos.h>
+#include<process.h>
+#include<stdlib.h>
+
+void main()
+{
+int ch;
+int a,qty;
+float bill;
+char y,n;
+clrscr();
+
+
+int ro=DETECT ,mo,jo=0,pon=0,ao;
+initgraph(&ro,&mo,"c:\\turboc3\\bgi");
+
+
+while(!kbhit())
+{
+
+
+cout<<"...>> >> >> GALAXY >> >> >>...\n";
+cout<<"\t\t  WELCOME TO OUR ONLINE SHOPPING ";
+circle(200,200,50);
+setcolor(RED);
+for(pon=53;pon<57;pon++)
+arc(200,200,-180+jo,-120+jo,pon);
+setcolor(BLUE);
+for(pon=53;pon<57;pon++)
+arc(200,200,-100+jo,-50+jo,pon);
+setcolor(RED);
+for(pon=53;pon<57;pon++)
+arc(200,200,-30+jo,20+jo,pon);
+setcolor(BLUE);
+for(pon=53;pon<57;pon++)
+arc(200,200,40+jo,90+jo,pon);
+setcolor(RED);
+for(pon=53;pon<57;pon++)
+arc(200,200,110+jo,160+jo,pon);
+for(pon=53;pon<57;pon++)
+setcolor(GREEN);
+circle(200,200,60);
+delay(20);
+if(jo>10&&jo<50)
+{
+delay(50);
+}
+if(jo>185&&jo<350)
+{
+delay(1);
+jo=0;
+}
+cleardevice();
+jo+=5;
+}
+
+
+
+
+do
+{
+
+
+getch();
+clrscr();
+cout<<"\n\n\t|-----------|-------------|-------------|------------|";
+cout<<"\n\t| 1.[GAMES] |  2.[SHOES]  | 3.[MOBILE]  |  4.[TOOLS] |";
+cout<<"\n\t|-----------|-------------|-------------|------------|";
+cout<<"\n\t| 5.COMPUTER|  6.[WATCH]  |  7.[CLOTHS] |  8.[TOY]   |";
+cout<<"\n\t|-----------|-------------|-------------|------------|";
+cout<<"\n\n\t    ***Please enter the product number you want***";
+cout<<"\n\n Enter your number here :->";
+cin>>ch;
+switch(ch)
+{case 1:
+
+getch();
+clrscr();
+cout<<"Choose the game\t\t|1.Football | 2.Cricket | 3.Tennis |";
+cout<<"\n\t\t\t|-----------|-----------|----------|";
+cout<<"\n\t\t\t| 4.Hockey  |  5.Ball   | 6.Carram |\n\t\t\t|-----------|-----------|----------|\n\t\t\t|  7.Chess  |\n\t\t\t|-----------|";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>a;
+switch(a)
+{case 1:
+cout<<"\n\n ** Football RS.300 **\n\n";
+cout<<":) Enter the number of Footballs you want @";
+cin>>qty;
+bill=qty*300;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 2:
+cout<<"\n\n ** Bat RS.150 ** \n\n";
+cout<<":) Enter the number of Bat you want @";
+cin>>qty;
+bill=qty*150;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 3:
+cout<<"\n\n ** Tennis Bat RS.80 ** \n\n";
+cout<<":) Enter the number of TennisBat you want @";
+cin>>qty;
+bill=qty*80;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 4:
+cout<<"\n\n ** Hockey stick RS.100 ** \n\n";
+cout<<":) Enter the number of Hockey stick you want @";
+cin>>qty;
+bill=qty*100;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 5:
+cout<<"\n\n ** Ball RS.50 ** \n\n";
+cout<<":) Enter the number of Ball you want @";
+cin>>qty;
+bill=qty*50;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 6:
+cout<<"\n\n ** Carram RS.60 ** \n\n";
+cout<<":) Enter the number of Carram you want @";
+cin>>qty;
+bill=qty*60;
+cout<<"@ Your bill is :="<<bill;
+break;
+case 7:
+cout<<"\n\n ** Chess RS.40 ** \n\n";
+cout<<":) Enter the number of Chess you want @";
+cin>>qty;
+bill=qty*40;
+cout<<"@ Your bill is :="<<bill;
+break;
+}
+break;
+
+
+
+
+
+
+case 2:
+getch();
+clrscr();
+
+int b,qaty,bll;
+cout<<"Choose the shoe\t\t|  1.Spike  |   2.Nike  |  3.Puma  |";
+cout<<"\n\t\t\t|-----------|-----------|----------|";
+cout<<"\n\t\t\t| 4.Adiddas |   5.Fly   | 6.Bounce |";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>b;
+switch(b)
+{case 1:
+cout<<"\n\n ** Spike RS.300 ** \n\n";
+cout<<":) Enter the number of Spike couple shoes you want @";
+cin>>qaty;
+bll=qaty*300;
+cout<<"@ Your bill is :="<<bll;
+break;
+case 2:
+cout<<"\n\n ** Nike RS.500 ** \n\n";
+cout<<":) Enter the number of Nike couple shoes you want @";
+cin>>qaty;
+bll=qaty*500;
+cout<<"@ Your bill is :="<<bll;
+break;
+case 3:
+cout<<"\n\n ** Puma RS.450 ** \n\n";
+cout<<":) Enter the number of Puma couple shoes you want @";
+cin>>qaty;
+bll=qaty*450;
+cout<<"@ Your bill is :="<<bll;
+break;
+case 4:
+cout<<"\n\n ** Adiddas RS.700 ** \n\n";
+cout<<":) Enter the number of Adiddas couple shoes you want @";
+cin>>qaty;
+bll=qaty*700;
+cout<<"@ Your bill is :="<<bll;
+break;
+case 5:
+cout<<"\n\n ** Fly RS.300 ** \n\n";
+cout<<":) Enter the number of Fly couple shoes you want @";
+cin>>qaty;
+bll=qaty*300;
+cout<<"@ Your bill is :="<<bll;
+break;
+case 6:
+cout<<"\n\n ** Bounce RS.350 ** \n\n";
+cout<<":) Enter the number of Bounce couple shoes you want @";
+cin>>qaty;
+bll=qaty*350;
+cout<<"@ Your bill is :="<<bll;
+break;
+}
+break;
+
+
+
+
+
+
+
+case 3:
+getch();
+clrscr();
+
+int c,p,e;
+cout<<"Choose the Mobile\t|   1.HTC   |  2.Apple  |  3.Pixel |";
+cout<<"\n\t\t\t|-----------|-----------|----------|";
+cout<<"\n\t\t\t|  4.Moto   | 5.Nokia N1| 6.SAMSUNG|\n\t\t\t|-----------|-----------|----------|\n\t\t\t|   7.LG    |\n\t\t\t|-----------|";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>c;
+switch(c)
+{case 1:
+cout<<"\n\n ** HTC RS.15000 ** \n\n";
+cout<<":) Enter the number of HTC mobiles you want @";
+cin>>p;
+e=p*15000;
+cout<<"@ Your bill is :="<<e;
+break;
+case 2:
+cout<<"\n\n ** Apple RS.25000 ** \n\n";
+cout<<":) Enter the number of Apple mobiles you want @";
+cin>>p;
+e=p*25000;
+cout<<"@ Your bill is :="<<e;
+break;
+case 3:
+cout<<"\n\n ** Pixel RS.30000 ** \n\n";
+cout<<":) Enter the number of Pixel mobiles you want @";
+cin>>p;
+e=p*30000;
+cout<<"@ Your bill is :="<<e;
+break;
+case 4:
+cout<<"\n\n ** Moto RS.12000 ** \n\n";
+cout<<":) Enter the number of Moto mobiles you want @";
+cin>>p;
+e=p*12000;
+cout<<"@ Your bill is :="<<e;
+break;
+case 5:
+cout<<"\n\n ** Nokia N1 RS.35000 ** \n\n";
+cout<<":) Enter the number of Nokia N1 mobiles you want @";
+cin>>p;
+e=p*35000;
+cout<<"@ Your bill is :="<<e;
+break;
+case 6:
+cout<<"\n\n ** SAMAUNG RS.15000 ** \n\n";
+cout<<":) Enter the number of SAMAUNG mobiles you want @";
+cin>>p;
+e=p*15000;
+cout<<"@ Your bill is :="<<e;
+case 7:
+cout<<"\n\n ** LG RS.18000 ** \n\n";
+cout<<":) Enter the number of LG mobiles you want @";
+cin>>p;
+e=p*18000;
+cout<<"@ Your bill is :="<<e;
+break;
+}
+break;
+
+
+
+
+
+
+
+
+ case 4:
+ getch();
+ clrscr();
+
+int k,s,t;
+cout<<"Choose the shoe\t\t|  1.Hammer |  2.Screw  |   3.Nut  |";
+cout<<"\n\t\t\t|-----------|-----------|----------|";
+cout<<"\n\t\t\t|   4.Axe   |   5.Saw   |  6.Pins  |";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>k;
+switch(k)
+{case 1:
+cout<<"\n\n** Hammer RS.100 **\n\n";
+cout<<":) Enter the number of Hammer you want @";
+cin>>s;
+t=s*100;
+cout<<"@ Your bill is :="<<t;
+break;
+case 2:
+cout<<"\n\n ** Screw RS.50 ** \n\n";
+cout<<":) Enter the number of Screw you want @";
+cin>>s;
+t=s*50;
+cout<<"@ Your bill is :="<<t;
+break;
+case 3:
+cout<<"\n\n ** Nut RS.15 ** \n\n";
+cout<<":) Enter the number of Nut you want @";
+cin>>s;
+t=s*15;
+cout<<"@ Your bill is :="<<t;
+break;
+case 4:
+cout<<"\n\n ** Axe RS.200 **\n\n";
+cout<<":) Enter the number of Axe you want @";
+cin>>s;
+t=s*200;
+cout<<"@ Your bill is :="<<t;
+break;
+case 5:
+cout<<"\n\n ** Saw RS.250 ** \n\n";
+cout<<":) Enter the number of Saw you want @";
+cin>>s;
+t=s*250;
+cout<<"@ Your bill is :="<<t;
+break;
+case 6:
+cout<<"\n\n ** Pins RS.10 ** \n\n";
+cout<<":) Enter the number of Pins you want @";
+cin>>s;
+t=s*10;
+cout<<"@ Your bill is :="<<t;
+break;
+}
+break;
+
+
+
+
+
+
+
+
+
+
+
+ case 5:
+ getch();
+ clrscr();
+
+int q,r,l;
+cout<<"Choose the Computer products\t | 1.Moniter |  2.Mouse  |   3.Keyboard  |";
+cout<<"\n\t\t\t|--------------------|-----------|---------------|";
+cout<<"\n\t\t\t|  4.Graphics card   |   5.Ram   |  6.Processor  |";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>q;
+switch(q)
+{case 1:
+cout<<"\n\n ** Moniter RS.2000 ** \n\n";
+cout<<":) Enter the number of Moniter you want @";
+cin>>r;
+l=r*2000;
+cout<<"@ Your bill is :="<<l;
+break;
+case 2:
+cout<<"\n\n ** Mouse RS.250 ** \n\n";
+cout<<":) Enter the number of Mouse you want @";
+cin>>r;
+l=r*250;
+cout<<"@ Your bill is :="<<l;
+break;
+case 3:
+cout<<"\n\n ** Keyboard RS.250 ** \n\n";
+cout<<":) Enter the number of Keyboard you want @";
+cin>>r;
+l=r*250;
+cout<<"@ Your bill is :="<<l;
+break;
+case 4:
+cout<<"\n\n ** Graphics card RS.3000 ** \n\n";
+cout<<":) Enter the number of Graphics card you want @";
+cin>>r;
+l=r*3000;
+cout<<"@ Your bill is :="<<l;
+break;
+case 5:
+cout<<"\n\n ** Ram RS.1500 ** \n\n";
+cout<<":) Enter the number of Ram you want @";
+cin>>r;
+l=r*1500;
+cout<<"@ Your bill is :="<<l;
+break;
+case 6:
+cout<<"\n\n ** Processor RS.4000 ** \n\n";
+cout<<":) Enter the number of Processor you want @";
+cin>>r;
+l=r*4000;
+cout<<"@ Your bill is :="<<l;
+break;
+}
+break;
+
+
+
+
+
+
+
+case 6:
+getch();
+clrscr();
+
+int w,m,x;
+cout<<"Choose the Watch products\t|  1.Titan  |  2.Sonata  |   3.Xylux   |";
+cout<<"\n\t\t\t\t|-----------|------------|-------------|";
+cout<<"\n\t\t\t\t|4.Fast track| 5.G force |   6.Rolax   |";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>w;
+switch(w)
+{case 1:
+cout<<"\n\n ** Titan watch RS.2000 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*2000;
+cout<<"@ Your bill is :="<<x;
+break;
+case 2:
+cout<<"\n\n ** Sonata RS.1000 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*1000;
+cout<<"@ Your bill is :="<<x;
+break;
+case 3:
+cout<<"\n\n ** Xylux RS.4500 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*4500;
+cout<<"@ Your bill is :="<<x;
+break;
+case 4:
+cout<<"\n\n ** Fast track RS.5000 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*5000;
+cout<<"@ Your bill is :="<<x;
+break;
+case 5:
+cout<<"\n\n ** G force RS.1500 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*1500;
+cout<<"@ Your bill is :="<<x;
+break;
+case 6:
+cout<<"\n\n ** Rolax RS.8000 ** \n\n";
+cout<<":) Enter the number of watch you want @";
+cin>>m;
+x=m*8000;
+cout<<"@ Your bill is :="<<x;
+break;
+}
+break;
+
+
+
+
+
+
+
+
+case 7:
+getch();
+clrscr();
+
+int o,i,n;
+cout<<"Choose the shoe\t\t|  1.Shirt |  2.Jeans  |   3.Mufler  |";
+cout<<"\n\t\t\t|----------|-----------|-------------|";
+cout<<"\n\t\t\t| 4.Trouser|";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>o;
+switch(o)
+{case 1:
+cout<<"\n\n ** Shirt RS.250 ** \n\n";
+cout<<":) Enter the number of Shirt you want @";
+cin>>i;
+n=i*250;
+cout<<"@ Your bill is :="<<n;
+break;
+case 2:
+cout<<"\n\n ** Jeans RS.450 ** \n\n";
+cout<<":) Enter the number of Jeans you want @";
+cin>>i;
+n=i*450;
+cout<<"@ Your bill is :="<<n;
+break;
+case 3:
+cout<<"\n\n ** Mufler RS.100 ** \n\n";
+cout<<":) Enter the number of Mufler you want @";
+cin>>i;
+n=i*100;
+cout<<"@ Your bill is :="<<n;
+break;
+case 4:
+cout<<"\n\n ** Trouser RS.200 ** \n\n";
+cout<<":) Enter the number of Trouser you want @";
+cin>>i;
+n=i*200;
+cout<<"@ Your bill is :="<<n;
+break;
+}
+break;
+
+
+
+case 8:
+getch();
+clrscr();
+
+int j,u,f;
+cout<<"Choose the shoe\t\t|  1.Teddy |  2.Doll |   3.Smily  |";
+cout<<"\n\t\t\t|----------|-----------|-------------|";
+cout<<"\n\t\t\t| 4.Robot|";
+cout<<"\n ENTER YOUR CHOISE HERE:- ";
+cin>>j;
+switch(j)
+{case 1:
+cout<<"\n\n ** Teddy RS.100 ** \n\n";
+cout<<":) Enter the number of Teddy you want @";
+cin>>u;
+f=u*100;
+cout<<"@ Your bill is :="<<f;
+break;
+case 2:
+cout<<"\n\n ** Doll RS.50 ** \n\n";
+cout<<":) Enter the number of Doll you want @";
+cin>>u;
+f=u*50;
+cout<<"@ Your bill is :="<<f;
+break;
+case 3:
+cout<<"\n\n ** Smily RS.30 ** \n\n";
+cout<<":) Enter the number of Smily you want @";
+cin>>u;
+f=u*30;
+cout<<"@ Your bill is :="<<f;
+break;
+case 4:
+cout<<"\n\n ** Robot RS.200 ** \n\n";
+cout<<":) Enter the number of Robot you want @";
+cin>>u;
+f=u*200;
+cout<<"@ Your bill is :="<<f;
+break;
+}
+}
+
+
+cout<<"\n\nDo you want to continue the shopping  :) \n\n\t << For continue press 'y' or for exit 'n' >>"<<endl;
+cin>>y;
+}
+while (y=='y');
+(0);
+
+
+
+
+
+
+
+int gd=DETECT,gm;
+initgraph(&gd,&gm,"c:\\turboc3\\bgi");
+
+delay(5);
+
+for(int i=0;i<500;i++)
+{
+
+line(50+i,370,90+i,370);
+arc(110+i,370,0,180,20);
+line(130+i,370,220+i,370);
+arc(240+i,370,0,180,20);
+line(260+i,370,300+i,370);
+line(300+i,370,300+i,350);
+line(300+i,350,240+i,330);
+line(240+i,330,200+i,300);
+line(200+i,300,110+i,300);
+line(110+i,300,80+i,330);
+line(80+i,330,50+i,340);
+line(50+i,340,50+i,370);
+
+line(165+i,305,165+i,330);
+line(165+i,330,230+i,330);
+line(230+i,330,195+i,305);
+line(195+i,305,165+i,305);
+
+line(160+i,305,160+i,330);
+line(160+i,330,95+i,330);
+line(95+i,330,120+i,305);
+line(120+i,305,160+i,305);
+
+
+circle(110+i,370,17);
+circle(240+i,370,17);
+
+delay(1);
+cleardevice();
+line(0,390,639,390);
+cout<<"  your product will be coming soon!!!\tTHANK YOU FOR SHOPPING :)";
+}
+
+getch();
+}
